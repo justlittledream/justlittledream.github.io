@@ -418,14 +418,6 @@
           
 
   
-    <div class="comments" id="comments">
-      
-        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
-        <div id="gitment-container" style="display: none"></div>
-      
-    </div>
-
-  
 
 
 
@@ -531,6 +523,8 @@
           
             
           
+          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=28442976&auto=1&height=32"></iframe>
+
           
 
         </div>
@@ -706,55 +700,6 @@
 
   
 
-
-  
-    <!-- LOCAL: You can save these files to your site and update links -->
-
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css">
-<!-- END LOCAL -->
-
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
-
-  a.gitment-editor-footer-tip, .gitment-container.gitment-footer-container {
-    display: none;
-  }
-
-</style>
-
-<script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: 'Smart-zhi',
-      repo: 'Smart-zhi.github.io',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '01c007d86dbffe6a416a702e955d272da995e6ae',
-      
-        client_id: '20a071bd6133c683d01b'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    function showGitment() {
-      document.getElementById('gitment-display-button').style.display = 'none';
-      document.getElementById('gitment-container').style.display = 'block';
-      renderGitment();
-    }
-  
-</script>
 
   
 
