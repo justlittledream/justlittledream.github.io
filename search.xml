@@ -14,14 +14,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[java2]]></title>
-    <url>%2F2019%2F01%2F25%2Fjava1%2F</url>
-    <content type="text"><![CDATA[1. Java语言的三种技术架构 JAVAEE 企业版 web应用程序 JAVASE 标准版 桌面应用程序 JAVAME 小型版 手机应用程序 2. Java跨平台性（Java虚拟机） win版 JVM linux版 JVM mac版 JVM 3. Java环境搭建 JRE Java运行环境：JVM、核心类库 JDK Java开发工具包（包含JRE）：编译工具、打包工具 &#123;cmd123456789+--------+ +-------+ +-------+| | --+ ditaa +--&gt; | || Text | +-------+ |diagram||Document| |!magic!| | || &#123;d&#125;| | | | |+---+----+ +-------+ +-------+ : ^ | Lots of work | +-------------------------+]]></content>
-      <tags>
-        <tag>java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[java1]]></title>
     <url>%2F2019%2F01%2F25%2F01%E5%9F%BA%E7%A1%80%2F</url>
     <content type="text"><![CDATA[1. Java语言的三种技术架构 JAVAEE 企业版 web应用程序 JAVASE 标准版 桌面应用程序 JAVAME 小型版 手机应用程序 2. Java跨平台性（Java虚拟机） win版 JVM linux版 JVM mac版 JVM 3. Java环境搭建 JRE Java运行环境：JVM、核心类库 JDK Java开发工具包（包含JRE）：编译工具、打包工具 &#123;cmd123456789+--------+ +-------+ +-------+| | --+ ditaa +--&gt; | || Text | +-------+ |diagram||Document| |!magic!| | || &#123;d&#125;| | | | |+---+----+ +-------+ +-------+ : ^ | Lots of work | +-------------------------+]]></content>
