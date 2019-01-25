@@ -1603,6 +1603,7 @@ pre .javascript .function {
 }
 .post-button {
   margin-top: 40px;
+  background: transparent;
 }
 .posts-expand .post-tags {
   margin-top: 40px;
@@ -1772,6 +1773,42 @@ pre .javascript .function {
   color: #fc6423;
   border-bottom: none;
   border-bottom: 1px solid #fc6423;
+}
+.posts-expand .post-nav {
+  margin-top: 40px;
+}
+.post-nav {
+  display: table;
+  margin-top: 15px;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+.post-nav-item {
+  display: table-cell;
+  padding: 10px 0 0 0;
+  width: 45%;
+  vertical-align: top;
+}
+.post-nav-item a {
+  position: relative;
+  display: block;
+  line-height: 25px;
+  font-size: 14px;
+  color: #555;
+  border-bottom: none;
+}
+.post-nav-divider {
+  display: table-cell;
+  width: 10%;
+}
+.post-nav-next a {
+  padding-left: 15px;
+}
+.post-nav-prev {
+  text-align: right;
+}
+.post-nav-prev a {
+  padding-right: 15px;
 }
 .sidebar {
   position: fixed;
@@ -1959,7 +1996,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #263c09;
+  background: #629c38;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2623,7 +2660,7 @@ ul.breadcrumb li+li:last-child {
   overflow: hidden;
   padding: 0;
   width: 310px;
-  background: #fff;
+  background: rgba(255,255,255,0.6);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -2669,7 +2706,7 @@ ul.breadcrumb li+li:last-child {
   box-sizing: border-box;
   padding: 40px;
   width: calc(100% - 322px);
-  background: #fff;
+  background: rgba(255,255,255,0.6);
   min-height: 700px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
@@ -2694,7 +2731,7 @@ ul.breadcrumb li+li:last-child {
   float: left;
   margin-left: -100%;
   width: 310px;
-  background: #eee;
+  background: rgba(255,255,255,0.6);
   box-shadow: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2918,7 +2955,7 @@ ul.breadcrumb li+li:last-child {
   box-sizing: border-box;
   width: 310px;
   color: #555;
-  background: #fff;
+  background: rgba(255,255,255,0.6);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
   opacity: 0;
@@ -3065,7 +3102,7 @@ ul.breadcrumb li+li:last-child {
 }
 .post-block {
   padding: 40px;
-  background: #fff;
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -3078,7 +3115,7 @@ ul.breadcrumb li+li:last-child {
   padding: 40px;
   margin: auto;
   margin-top: 12px;
-  background: #fff;
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
 }
@@ -3098,7 +3135,7 @@ ul.breadcrumb li+li:last-child {
 .pagination {
   margin: 12px 0 0;
   border-top: initial;
-  background: #fff;
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
   padding: 10px 0 10px;
@@ -3237,4 +3274,11 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+body {
+  background: url("/images/bg2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }

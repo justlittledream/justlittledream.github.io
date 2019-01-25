@@ -212,8 +212,8 @@
     live2d_settings['waifuToolLine'] = '28px';       // 工具栏行高
     live2d_settings['waifuToolTop'] = '-33px';       // 工具栏顶部边距
     live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
-    live2d_settings['waifuDraggableRevert'] = false;   
-		live2d_settings['waifuEdgeSide']  = 'right:10'; 
+    live2d_settings['waifuDraggableRevert'] = true;   
+		live2d_settings['waifuEdgeSide']  = 'left:20'; 
     /* 在 initModel 前添加 */
     initModel("/live2/waifu-tips.json?v=1.4.2")
   </script>
@@ -449,6 +449,10 @@
           
 
   
+    <div class="comments" id="comments">
+    </div>
+
+  
 
 
 
@@ -488,12 +492,27 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -507,7 +526,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -528,7 +551,7 @@
                   
                     
                   
-                  <a href="https://github.com/yourname" title="GitHub &rarr; https://github.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  <a href="https://github.com/Smart-zhi" title="GitHub &rarr; https://github.com/Smart-zhi" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
                 </span>
               
                 <span class="links-of-author-item">
@@ -539,7 +562,7 @@
                   
                     
                   
-                  <a href="mailto:yourname@gmail.com" title="E-Mail &rarr; mailto:yourname@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  <a href="mailto:1490295322@qq.com" title="E-Mail &rarr; mailto:1490295322@qq.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                 </span>
               
             </div>
@@ -729,6 +752,35 @@
 
 
   
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'Ez24jGLqE6WDJGQ76uMiFqWk-gzGzoHsz',
+    appKey: 'PYdwpf5qkk87AWTSWoDmw18O',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
 
 
   
