@@ -106,7 +106,7 @@
   <meta name="description" content="学习笔记">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About">
-<meta property="og:url" content="https://zhangzhi-csu.github.io/about/index.html">
+<meta property="og:url" content="https://Smart-zhi.github.io/about/index.html">
 <meta property="og:site_name" content="小箱子">
 <meta property="og:description" content="学习笔记">
 <meta property="og:locale" content="zh-CN">
@@ -120,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="https://zhangzhi-csu.github.io/about/">
+  <link rel="canonical" href="https://Smart-zhi.github.io/about/">
 
 
 
@@ -131,6 +131,9 @@
 </script>
 
   <title>About | 小箱子</title>
+
+  <link rel="stylesheet" type="text/css" href="/live2/waifu.min.css?v=1.4.2">
+
   
 
 
@@ -177,6 +180,43 @@
   
     
   
+
+
+  <script src="/live2/jquery.min.js?v=3.3.1"></script> 
+  <!-- 实现拖动效果，需引入 JQuery UI -->
+  <script src="/live2/jquery-ui.min.js?v=1.12.1"></script>
+
+    <script src="/live2/waifu-tips.min.js?v=1.4.2"></script>
+    <script src="/live2/live2d.min.js?v=1.0.5"></script>
+
+  <div class="waifu">
+    <div class="waifu-tips"></div>
+    <canvas id="live2d" class="live2d"></canvas>
+  </div>
+
+
+
+
+  <script type="text/javascript">
+    /* 可直接修改部分参数 */
+    live2d_settings['modelId'] = 1;                  // 默认模型 ID
+    live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
+    live2d_settings['modelStorage'] = false;         // 不储存模型 ID
+    live2d_settings['canCloseLive2d'] = false;       // 隐藏 关闭看板娘 按钮
+    live2d_settings['canTakeScreenshot']    = false;     
+    live2d_settings['canTurnToAboutPage']   = false; 
+    live2d_settings['waifuSize'] = '330x295';        // 看板娘大小
+    live2d_settings['waifuTipsSize'] = '313x82';    // 提示框大小
+    live2d_settings['waifuFontSize'] = '15px';       // 提示框字体
+    live2d_settings['waifuToolFont'] = '20px';       // 工具栏字体
+    live2d_settings['waifuToolLine'] = '28px';       // 工具栏行高
+    live2d_settings['waifuToolTop'] = '-33px';       // 工具栏顶部边距
+    live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
+    live2d_settings['waifuDraggableRevert'] = false;   
+		live2d_settings['waifuEdgeSide']  = 'right:10'; 
+    /* 在 initModel 前添加 */
+    initModel("/live2/waifu-tips.json?v=1.4.2")
+  </script>
 
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
@@ -441,7 +481,6 @@
               <p class="site-author-name" itemprop="name">Zhi</p>
               <p class="site-description motion-element" itemprop="description">学习笔记</p>
           </div>
-
           
             <nav class="site-state motion-element">
               
@@ -514,8 +553,6 @@
           
             
           
-          <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="//music.163.com/outchain/player?type=2&id=28442976&auto=1&height=32"></iframe>
-
           
 
         </div>
@@ -524,6 +561,8 @@
       
 
       
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="110" src="//music.163.com/outchain/player?type=0&id=472650231&auto=1&height=90"></iframe>
 
     </div>
   </aside>
@@ -1054,5 +1093,5 @@
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/haruto.model.json"},"display":{"position":"right","width":80,"height":160},"mobile":{"show":true},"log":false});</script></body>
+</body>
 </html>
