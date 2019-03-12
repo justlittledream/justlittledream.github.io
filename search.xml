@@ -1,40 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[Java语言基础组成]]></title>
-    <url>%2F2019%2F01%2F28%2Fjava02%2F</url>
-    <content type="text"><![CDATA[1. 关键字被Java语言赋予了特殊含义的单词。 特点：关键字中所有字母小写 定义数据类型 12class byte short int interface void long double char float boolean 定义数据类型值 1true false null 定义流程控制 12if else switch case default while do for break continue return 定义访问权限修饰符 1private protected public 定义类、函数、变量 1abstract final static synchronized 定义类与类间关系 1extends implements 定义建立、引用、判断实例 1new this super instanceof 处理异常 1try catch finally throw throws 用于包 1package import 其他 1native strictfp transient volatile assert 2. 标识符由26个字符（大小写）、数字、_、$组成规则： 数字不开头 不能用关键字 egclass Demo1testclass Demo_1$testname$subname 标识符要有意义类名：首字母大写。若由多个单词组成，每个单词首字母大写。以下划线开头：局部变量 3. 注释12345678910111213/**文档注释*/class Demo&#123; //这是单行注释 public static void main(String[] args)&#123; System.out.printlln("hello java!"); /* 多行注释 多行注释 多行注释 */ &#125;&#125; 4. 常量与变量5. 运算符6. 语句7. 函数8. 数组]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/03/12/hello-world/"/>
+      <url>/2019/03/12/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java语言基础组成</title>
+      <link href="/2019/01/28/java02/"/>
+      <url>/2019/01/28/java02/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-关键字"><a href="#1-关键字" class="headerlink" title="1. 关键字"></a>1. 关键字</h3><p>被Java语言赋予了特殊含义的单词。 特点：关键字中所有字母小写</p><ul><li><p>定义数据类型</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span><span class="title">byte</span><span class="title">short</span><span class="title">int</span><span class="title">interface</span><span class="title">void</span></span></span><br><span class="line"><span class="class"><span class="title">long</span><span class="title">double</span><span class="title">char</span><span class="title">float</span><span class="title">boolean</span></span></span><br></pre></td></tr></table></figure></li><li><p>定义数据类型值</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">true</span><span class="keyword">false</span><span class="keyword">null</span></span><br></pre></td></tr></table></figure></li><li><p>定义流程控制</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span><span class="keyword">else</span><span class="keyword">switch</span><span class="keyword">case</span><span class="keyword">default</span><span class="keyword">while</span></span><br><span class="line"><span class="keyword">do</span><span class="keyword">for</span><span class="keyword">break</span><span class="keyword">continue</span><span class="keyword">return</span></span><br></pre></td></tr></table></figure></li><li><p>定义访问权限修饰符</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span><span class="keyword">protected</span><span class="keyword">public</span></span><br></pre></td></tr></table></figure></li><li><p>定义类、函数、变量</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span><span class="keyword">final</span><span class="keyword">static</span><span class="keyword">synchronized</span></span><br></pre></td></tr></table></figure></li><li><p>定义类与类间关系</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extendsimplements</span><br></pre></td></tr></table></figure></li><li><p>定义建立、引用、判断实例</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span><span class="keyword">this</span><span class="keyword">super</span><span class="keyword">instanceof</span></span><br></pre></td></tr></table></figure></li><li><p>处理异常</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span><span class="keyword">catch</span><span class="keyword">finally</span><span class="keyword">throw</span><span class="keyword">throws</span></span><br></pre></td></tr></table></figure></li><li><p>用于包</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span><span class="keyword">import</span></span><br></pre></td></tr></table></figure></li><li><p>其他</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">native</span><span class="keyword">strictfp</span><span class="keyword">transient</span><span class="keyword">volatile</span><span class="keyword">assert</span></span><br></pre></td></tr></table></figure></li></ul><h3 id="2-标识符"><a href="#2-标识符" class="headerlink" title="2. 标识符"></a>2. 标识符</h3><p>由26个字符（大小写）、数字、<kbd>_</kbd>、<kbd>$</kbd>组成<br>规则：</p><ul><li>数字不开头</li><li>不能用关键字</li></ul><blockquote><p>eg<br>class Demo1test<br>class Demo_1$test<br>name$subname</p></blockquote><p>标识符要有意义<br>类名：首字母大写。若由多个单词组成，每个单词首字母大写。<br>以下划线开头：局部变量</p><h3 id="3-注释"><a href="#3-注释" class="headerlink" title="3. 注释"></a>3. 注释</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">文档注释</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123; <span class="comment">//这是单行注释</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">System.out.println(<span class="string">"hello java!"</span>);</span><br><span class="line"><span class="comment">/* </span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">多行注释</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">需求：练习hello word</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">思路：</span></span><br><span class="line"><span class="comment">1. 定义一个类</span></span><br><span class="line"><span class="comment">2. 定义一个主函数,保证程序独立运行</span></span><br><span class="line"><span class="comment">3. 在控制台看到，使用输出语句</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">步骤：</span></span><br><span class="line"><span class="comment">1. class</span></span><br><span class="line"><span class="comment">2. mian</span></span><br><span class="line"><span class="comment">3. System.out.println("hello word")</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123; </span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">System.out.println(<span class="string">"hello java!"</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="4-常量与变量"><a href="#4-常量与变量" class="headerlink" title="4. 常量与变量"></a>4. 常量与变量</h3><h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><p>常量是不能改变的数值</p><ul><li>整数常量<blockquote><p>二进制: 0 1<br>八进制: 0 1 2 3 4 5 6 7 以0开头<br>十进制: 0 1 2 3 4 5 6 7 8 9<br>十六进制: 0 1 2 3 4 5 6 7 8 9 a b c d e f  以0x开头</p></blockquote></li><li>小数常量</li><li>布尔常量：true、false</li><li>字符常量：’’</li><li>字符串常量：””</li><li>null常量：null</li></ul><h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><h3 id="5-运算符"><a href="#5-运算符" class="headerlink" title="5. 运算符"></a>5. 运算符</h3><h3 id="6-语句"><a href="#6-语句" class="headerlink" title="6. 语句"></a>6. 语句</h3><h3 id="7-函数"><a href="#7-函数" class="headerlink" title="7. 函数"></a>7. 函数</h3><h3 id="8-数组"><a href="#8-数组" class="headerlink" title="8. 数组"></a>8. 数组</h3>]]></content>
+      
+      
       <categories>
-        <category>Java</category>
+          
+          <category> Java </category>
+          
       </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[test2]]></title>
-    <url>%2F2019%2F01%2F25%2Ftest2%2F</url>
-    <content type="text"><![CDATA[dsf 12int a = 1;char d = 2; //定义部分 st=>start: Start:>http://www.google.com[blank] e=>end:>http://www.google.com op1=>operation: My Operation sub1=>subroutine: My Subroutine cond=>condition: Yes or No?:>http://www.google.com io=>inputoutput: catch something... //判断和位置控制 st->op1->cond cond(yes)->io->e cond(no)->sub1(right)->op1{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12} var code = document.getElementById("flowchart-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)); var diagram = flowchart.parse(code); diagram.drawSVG("flowchart-0", options);Alice->Bob: Hello Bob, how are you? Note right of Bob: Bob thinks Bob-->Alice: I am good thanks!{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12} var code = document.getElementById("sequence-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value)); var diagram = Diagram.parse(code); diagram.drawSVG("sequence-0", options);]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F01%2F25%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[test1]]></title>
-    <url>%2F2019%2F01%2F25%2Ftest1%2F</url>
-    <content type="text"><![CDATA[\sum_{i=0}N\int_{a}^bg(t,i)\text{d}t$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$ \begin{matrix} 1&0&0\\ 0&1&0\\ 0&0&1\\ \end{matrix}\begin{bmatrix} {a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\ {a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\ {\vdots}&{\vdots}&{\ddots}&{\vdots}\\ {a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\ \end{bmatrix}\begin{array}{c|lll} {↓}&{a}&{b}&{c}\\ \hline {R_1}&{c}&{b}&{a}\\ {R_2}&{b}&{c}&{c}\\ \end{array}\begin{cases} a_1x+b_1y+c_1z=d_1\\ a_2x+b_2y+c_2z=d_2\\ a_3x+b_3y+c_3z=d_3\\ \end{cases}]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[Java语言概述]]></title>
-    <url>%2F2019%2F01%2F25%2FJava01%2F</url>
-    <content type="text"><![CDATA[1. Java语言的三种技术架构 JAVAEE 企业版 web应用程序 JAVASE 标准版 桌面应用程序 JAVAME 小型版 手机应用程序 2. Java跨平台性（Java虚拟机） win版 JVM linux版 JVM mac版 JVM 3. Java环境搭建 JRE Java运行环境：JVM、核心类库 JDK Java开发工具包（包含JRE）：编译工具、打包工具]]></content>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test2</title>
+      <link href="/2019/01/25/test2/"/>
+      <url>/2019/01/25/test2/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>dsf</p></blockquote><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">char</span> d = <span class="number">2</span>;</span><br></pre></td></tr></table></figure><div id="flowchart-0" class="flow-chart"></div><div id="sequence-0"></div><p><script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js"></script><textarea id="sequence-0-code" style="display: none">Alice->Bob: Hello Bob, how are you?Note right of Bob: Bob thinksBob-->Alice: I am good thanks!</textarea><textarea id="sequence-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("sequence-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value));  var diagram = Diagram.parse(code);  diagram.drawSVG("sequence-0", options);</script><script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none">//定义部分st=>start: Start:>http://www.google.com[blank]e=>end:>http://www.google.comop1=>operation: My Operationsub1=>subroutine: My Subroutinecond=>condition: Yes or No?:>http://www.google.comio=>inputoutput: catch something...//判断和位置控制st->op1->condcond(yes)->io->econd(no)->sub1(right)->op1</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test1</title>
+      <link href="/2019/01/25/test1/"/>
+      <url>/2019/01/25/test1/</url>
+      
+        <content type="html"><![CDATA[<script type="math/tex; mode=display">\sum_{i=0}N\int_{a}^bg(t,i)\text{d}t</script><p>$\sum_{i=0}^N\int_{a}^{b}g(t,i)\text{d}t$</p><script type="math/tex; mode=display">\begin{matrix}1&0&0\\0&1&0\\0&0&1\\\end{matrix}</script><script type="math/tex; mode=display">\begin{bmatrix}{a_{11}}&{a_{12}}&{\cdots}&{a_{1n}}\\{a_{21}}&{a_{22}}&{\cdots}&{a_{2n}}\\{\vdots}&{\vdots}&{\ddots}&{\vdots}\\{a_{m1}}&{a_{m2}}&{\cdots}&{a_{mn}}\\\end{bmatrix}</script><script type="math/tex; mode=display">\begin{array}{c|lll}{↓}&{a}&{b}&{c}\\\hline{R_1}&{c}&{b}&{a}\\{R_2}&{b}&{c}&{c}\\\end{array}</script><script type="math/tex; mode=display">\begin{cases}a_1x+b_1y+c_1z=d_1\\a_2x+b_2y+c_2z=d_2\\a_3x+b_3y+c_3z=d_3\\\end{cases}</script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java语言概述</title>
+      <link href="/2019/01/25/Java01/"/>
+      <url>/2019/01/25/Java01/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-Java语言的三种技术架构"><a href="#1-Java语言的三种技术架构" class="headerlink" title="1. Java语言的三种技术架构"></a>1. Java语言的三种技术架构</h3><ul><li>JAVAEE 企业版 web应用程序</li><li>JAVASE 标准版 桌面应用程序</li><li>JAVAME 小型版 手机应用程序</li></ul><h3 id="2-Java跨平台性（Java虚拟机）"><a href="#2-Java跨平台性（Java虚拟机）" class="headerlink" title="2. Java跨平台性（Java虚拟机）"></a>2. Java跨平台性（Java虚拟机）</h3><ul><li>win版   JVM</li><li>linux版 JVM</li><li>mac版   JVM</li></ul><h3 id="3-Java环境搭建"><a href="#3-Java环境搭建" class="headerlink" title="3. Java环境搭建"></a>3. Java环境搭建</h3><ul><li>JRE Java运行环境：JVM、核心类库</li><li>JDK Java开发工具包（包含JRE）：编译工具、打包工具</li></ul>]]></content>
+      
+      
       <categories>
-        <category>Java</category>
+          
+          <category> Java </category>
+          
       </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
