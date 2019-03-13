@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
+    <title></title>
     <url>%2F2019%2F03%2F12%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+    <content type="text"><![CDATA[类成员变量：首字母小写 驼峰原则局部变量：首字母小写 驼峰原则常量：大写字母和下划线:MAX_VALUE类名：首字母大写和驼峰原则 HelloWorld方法名：首字母小写和驼峰原则 2.6基本数据类型括号内的为字节 byte (1) short(2) int(4 -2e31~2e31 22e左右) long(8 2e63) long b =55eL; double(8) float(4)默认是double类型二进制浮点数不能精确的表示0.1、0.01、0.001这样10的负次幂。并不是所有的小数都能可以精确的用二进制浮点数表示/.浮点数存在舍入误差，数字不能精确表示。如果需要进行不产生舍入误差的精确数字计算，需要使用BigDecimal类。chr(2) ‘A’ !=”A” 前者是字符 后者字符串boolean引用数据类型 4个字节 引用对象地址类接口数组 逻辑运算符逻辑与&amp;( 与)两个操作数为true，结果才是true，否则是false逻辑或|(或)两个操作数有一个是true，结果就是true短路与&amp;&amp;( 与)只要有一个为false，则直接返回false短路或||(或)只要有一个为true， 则直接返回true逻辑非!（非）取反：!false为true，!true为false逻辑异或^（异或）相同为false，不同为true]]></content>
   </entry>
   <entry>
     <title><![CDATA[Java语言基础组成]]></title>
@@ -19,7 +19,7 @@
   <entry>
     <title><![CDATA[test2]]></title>
     <url>%2F2019%2F01%2F25%2Ftest2%2F</url>
-    <content type="text"><![CDATA[dsf 12int a = 1;char d = 2; Alice->Bob: Hello Bob, how are you? Note right of Bob: Bob thinks Bob-->Alice: I am good thanks!{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"} var code = document.getElementById("sequence-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value)); var diagram = Diagram.parse(code); diagram.drawSVG("sequence-0", options);//定义部分 st=>start: Start:>http://www.google.com[blank] e=>end:>http://www.google.com op1=>operation: My Operation sub1=>subroutine: My Subroutine cond=>condition: Yes or No?:>http://www.google.com io=>inputoutput: catch something... //判断和位置控制 st->op1->cond cond(yes)->io->e cond(no)->sub1(right)->op1{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"} var code = document.getElementById("flowchart-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)); var diagram = flowchart.parse(code); diagram.drawSVG("flowchart-0", options);]]></content>
+    <content type="text"><![CDATA[dsf 12int a = 1;char d = 2; //定义部分 st=>start: Start:>http://www.google.com[blank] e=>end:>http://www.google.com op1=>operation: My Operation sub1=>subroutine: My Subroutine cond=>condition: Yes or No?:>http://www.google.com io=>inputoutput: catch something... //判断和位置控制 st->op1->cond cond(yes)->io->e cond(no)->sub1(right)->op1{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12} var code = document.getElementById("flowchart-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)); var diagram = flowchart.parse(code); diagram.drawSVG("flowchart-0", options);Alice->Bob: Hello Bob, how are you? Note right of Bob: Bob thinks Bob-->Alice: I am good thanks!{"theme":"simple","scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12} var code = document.getElementById("sequence-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value)); var diagram = Diagram.parse(code); diagram.drawSVG("sequence-0", options);]]></content>
   </entry>
   <entry>
     <title><![CDATA[test1]]></title>
