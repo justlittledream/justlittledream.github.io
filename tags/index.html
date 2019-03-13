@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,29 +24,48 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
+  
+  
+  
+
   
     
     
-  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
-  <link rel="stylesheet" href="/lib/pace/pace-theme-big-counter.min.css?v=1.0.2">
+  
 
+  
 
+  
 
+  
 
+  
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
 
 
 
@@ -55,19 +74,19 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
 
 
 
@@ -80,8 +99,10 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '6.7.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    version: '7.0.1',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -109,7 +130,7 @@
 <meta property="og:url" content="https://justlittledream.github.io/tags/index.html">
 <meta property="og:site_name" content="白云苍猫">
 <meta property="og:description" content="In me the tiger sniffs the rose.">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-01-23T13:15:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签">
@@ -131,9 +152,6 @@
 </script>
 
   <title>标签 | 白云苍猫</title>
-
-  <link rel="stylesheet" type="text/css" href="/live2/waifu.min.css?v=1.4.2">
-
   
 
 
@@ -174,53 +192,16 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
     
   
 
-
-  <script src="/live2/jquery.min.js?v=3.3.1"></script> 
-  <!-- 实现拖动效果，需引入 JQuery UI -->
-  <script src="/live2/jquery-ui.min.js?v=1.12.1"></script>
-
-    <script src="/live2/waifu-tips.min.js?v=1.4.2"></script>
-    <script src="/live2/live2d.min.js?v=1.0.5"></script>
-
-  <div class="waifu">
-    <div class="waifu-tips"></div>
-    <canvas id="live2d" class="live2d"></canvas>
-  </div>
-
-
-
-
-  <script type="text/javascript">
-    /* 可直接修改部分参数 */
-    live2d_settings['modelId'] = 1;                  // 默认模型 ID
-    live2d_settings['modelTexturesId'] = 87;         // 默认材质 ID
-    live2d_settings['modelStorage'] = false;         // 不储存模型 ID
-    live2d_settings['canCloseLive2d'] = false;       // 隐藏 关闭看板娘 按钮
-    live2d_settings['canTakeScreenshot']    = false;     
-    live2d_settings['canTurnToAboutPage']   = false; 
-    live2d_settings['waifuSize'] = '330x295';        // 看板娘大小
-    live2d_settings['waifuTipsSize'] = '313x82';    // 提示框大小
-    live2d_settings['waifuFontSize'] = '15px';       // 提示框字体
-    live2d_settings['waifuToolFont'] = '20px';       // 工具栏字体
-    live2d_settings['waifuToolLine'] = '28px';       // 工具栏行高
-    live2d_settings['waifuToolTop'] = '-33px';       // 工具栏顶部边距
-    live2d_settings['waifuDraggable'] = 'axis-x';    // 拖拽样式
-    live2d_settings['waifuDraggableRevert'] = true;   
-		live2d_settings['waifuEdgeSide']  = 'left:20'; 
-    /* 在 initModel 前添加 */
-    initModel("/live2/waifu-tips.json?v=1.4.2")
-  </script>
-
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-right page-post-detail">
     <div class="headband"></div>
-    
+
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
@@ -238,7 +219,7 @@
   </div>
 
   <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -267,6 +248,23 @@
     
 
     <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
 
   </li>
         
@@ -335,23 +333,6 @@
     
 
     <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-sitemap">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/sitemap.xml" rel="section"><i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>站点地图</a>
 
   </li>
 
@@ -479,7 +460,9 @@
               目前共计 1 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Java/" style="font-size: 12px; color: #ccc">Java</a>
+              
+                <a href="/tags/Java/" style="font-size: 12px; color: #ccc">Java</a>
+              
             </div>
           </div>
         
@@ -518,7 +501,6 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
@@ -529,11 +511,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/1.jpg" alt="博主">
+              <img class="site-author-image" itemprop="image" src="/images/user.jpg" alt="Luo">
             
-              <p class="site-author-name" itemprop="name">博主</p>
-              <p class="site-description motion-element" itemprop="description">In me the tiger sniffs the rose.</p>
+              <p class="site-author-name" itemprop="name">Luo</p>
+              <div class="site-description motion-element" itemprop="description">In me the tiger sniffs the rose.</div>
           </div>
+
           
             <nav class="site-state motion-element">
               
@@ -551,7 +534,11 @@
                 
                 
                 <div class="site-state-item site-state-categories">
-                  <a href="/categories/index.html">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
                     
                     
                       
@@ -566,7 +553,11 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
                     
                     
                       
@@ -577,6 +568,8 @@
                 </div>
               
             </nav>
+          
+
           
 
           
@@ -602,6 +595,7 @@
 
     </div>
   </aside>
+  
 
 
         
@@ -614,13 +608,13 @@
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">博主</span>
+  <span class="author" itemprop="copyrightHolder">Luo</span>
 
   
 
   
 </div>
-<!--
+
 
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
@@ -630,38 +624,12 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.0.1</div>
 
--->
+
 
 
         
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-user"></i>
-    </span>
-    <span class="site-uv" title="Total Visitors">
-      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
-    </span>
-  
-
-  
-    <span class="post-meta-divider">|</span>
-  
-
-  
-    <span class="post-meta-item-icon">
-      <i class="fa fa-eye"></i>
-    </span>
-    <span class="site-pv" title="Total Views">
-      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
-    </span>
-  
-</div>
-
 
 
 
@@ -709,7 +677,16 @@
 
 
 
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
+
+
+  
+  
 
 
 
@@ -730,37 +707,48 @@
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
+  
+  <script src="/lib/three/three.min.js"></script>
 
   
-
-
-  <script src="/js/src/utils.js?v=6.7.0"></script>
-
-  <script src="/js/src/motion.js?v=6.7.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/schemes/muse.js?v=6.7.0"></script>
-
-
-
-
-  
-  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
-<script src="/js/src/post-details.js?v=6.7.0"></script>
-
+  <script src="/lib/three/three-waves.min.js"></script>
 
 
   
 
 
-  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+  <script src="/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/js/src/motion.js?v=7.0.1"></script>
 
 
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
+
+
+
+  
+
+
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+
+
+  
+
+  
+
+  
 
   
 
@@ -769,7 +757,6 @@
 
 
   
-
   <script>
     // Popup Window;
     var isfetched = false;
@@ -1103,13 +1090,8 @@
   
 
   
-  
 
   
-  
-
-  
-
 
   
 
