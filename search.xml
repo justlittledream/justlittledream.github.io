@@ -17,6 +17,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java基础之多种数据类型]]></title>
+    <url>%2F2019%2F01%2Fjava03%2F</url>
+    <content type="text"><![CDATA[1. StringBuffer和StringBuilderStringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。 创建 StringBuffer 类 12class byte short int interface void long double char float boolean 定义数据类型值 1true false null 定义流程控制 12if else switch case default while do for break continue return 定义访问权限修饰符 1private protected public 定义类、函数、变量 1abstract final static synchronized 定义类与类间关系 1extends implements 定义建立、引用、判断实例 1new this super instanceof 处理异常 1try catch finally throw throws 用于包 1package import 其他 1native strictfp transient volatile assert 2. 标识符由26个字符（大小写）、数字、_、$组成规则： 数字不开头 不能用关键字 egclass Demo1testclass Demo_1$testname$subname 标识符要有意义类名：首字母大写。若由多个单词组成，每个单词首字母大写。以下划线开头：局部变量 3. 注释12345678910111213/**文档注释*/class Demo&#123; //这是单行注释 public static void main(String[] args)&#123; System.out.println("hello java!"); /* 多行注释 多行注释 多行注释 */ &#125;&#125; 12345678910111213141516171819/*需求：练习hello word思路：1. 定义一个类2. 定义一个主函数,保证程序独立运行3. 在控制台看到，使用输出语句步骤：1. class2. mian3. System.out.println("hello word")*/class Demo&#123; public static void main(String[] args)&#123; System.out.println("hello java!"); &#125;&#125; 4. 常量与变量常量常量是不能改变的数值 整数常量 二进制: 0 1八进制: 0 1 2 3 4 5 6 7 以0开头十进制: 0 1 2 3 4 5 6 7 8 9十六进制: 0 1 2 3 4 5 6 7 8 9 a b c d e f 以0x开头 小数常量 布尔常量：true、false 字符常量：’’ 字符串常量：”” null常量：null 变量5. 运算符6. 语句7. 函数8. 数组]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[test2]]></title>
     <url>%2F2019%2F01%2Ftest2%2F</url>
     <content type="text"><![CDATA[dsf 12int a = 1;char d = 2; Alice->Bob: Hello Bob, how are you? Note right of Bob: Bob thinks Bob-->Alice: I am good thanks!{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"} var code = document.getElementById("sequence-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("sequence-0-options").value)); var diagram = Diagram.parse(code); diagram.drawSVG("sequence-0", options);//定义部分 st=>start: Start:>http://www.google.com[blank] e=>end:>http://www.google.com op1=>operation: My Operation sub1=>subroutine: My Subroutine cond=>condition: Yes or No?:>http://www.google.com io=>inputoutput: catch something... //判断和位置控制 st->op1->cond cond(yes)->io->e cond(no)->sub1(right)->op1{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12,"theme":"simple"} var code = document.getElementById("flowchart-0-code").value; var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value)); var diagram = flowchart.parse(code); diagram.drawSVG("flowchart-0", options);]]></content>
