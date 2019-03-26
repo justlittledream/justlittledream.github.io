@@ -124,18 +124,18 @@
 
 
 
-  <meta name="description" content="1. StringBuffer和StringBuilderStringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。  创建 StringBuffer 类 12class	byte	sho">
+  <meta name="description" content="StringBuffer和StringBuilderStringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。  创建 StringBuffer 类StringBuffer 类提供了 3">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java基础之多种数据类型">
 <meta property="og:url" content="https://justlittledream.github.io/2019/01/java03/index.html">
 <meta property="og:site_name" content="白云苍猫">
-<meta property="og:description" content="1. StringBuffer和StringBuilderStringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。  创建 StringBuffer 类 12class	byte	sho">
+<meta property="og:description" content="StringBuffer和StringBuilderStringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。  创建 StringBuffer 类StringBuffer 类提供了 3">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-24T04:29:58.340Z">
+<meta property="og:updated_time" content="2019-03-25T12:15:49.008Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java基础之多种数据类型">
-<meta name="twitter:description" content="1. StringBuffer和StringBuilderStringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。  创建 StringBuffer 类 12class	byte	sho">
+<meta name="twitter:description" content="StringBuffer和StringBuilderStringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。  创建 StringBuffer 类StringBuffer 类提供了 3">
 
 
 
@@ -474,7 +474,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-24 12:29:58" itemprop="dateModified" datetime="2019-03-24T12:29:58+08:00">2019-03-24</time>
+                <time title="修改时间：2019-03-25 20:15:49" itemprop="dateModified" datetime="2019-03-25T20:15:49+08:00">2019-03-25</time>
               
             
           </span>
@@ -526,63 +526,19 @@
       
 
       
-        <h3 id="1-StringBuffer和StringBuilder"><a href="#1-StringBuffer和StringBuilder" class="headerlink" title="1. StringBuffer和StringBuilder"></a>1. StringBuffer和StringBuilder</h3><p>StringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。</p>
+        <h3 id="StringBuffer和StringBuilder"><a href="#StringBuffer和StringBuilder" class="headerlink" title="StringBuffer和StringBuilder"></a>StringBuffer和StringBuilder</h3><p>StringBuffer 类是可变字符串类，创建 StringBuffer 类的对象后可以随意修改字符串的内容。每个 StringBuffer 类的对象都能够存储指定容量的字符串，如果字符串的长度超过了 StringBuffer 类对象的容量，则该对象的容量会自动扩大。</p>
 <ul>
-<li><p>创建 StringBuffer 类</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span>	<span class="title">byte</span>	<span class="title">short</span>	<span class="title">int</span>	<span class="title">interface</span>	<span class="title">void</span>	</span></span><br><span class="line"><span class="class"><span class="title">long</span>	<span class="title">double</span>	<span class="title">char</span>	<span class="title">float</span>	<span class="title">boolean</span></span></span><br></pre></td></tr></table></figure>
+<li><p>创建 StringBuffer 类<br>StringBuffer 类提供了 3 个构造方法来创建一个字符串，如下所示：<br>StringBuffer() 构造一个空的字符串缓冲区，并且初始化为 16 个字符的容量。<br>StringBuffer(int length) 创建一个空的字符串缓冲区，并且初始化为指定长度 length 的容量。<br>StringBuffer(String str) 创建一个字符串缓冲区，并将其内容初始化为指定的字符串内容 str，字符串缓冲区的初始容量为 16 加上字符串 str 的长度。</p>
 </li>
-<li><p>定义数据类型值</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">true</span>	<span class="keyword">false</span>	<span class="keyword">null</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>定义流程控制</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>	<span class="keyword">else</span>	<span class="keyword">switch</span>	<span class="keyword">case</span>	<span class="keyword">default</span>	<span class="keyword">while</span>	</span><br><span class="line"><span class="keyword">do</span>	<span class="keyword">for</span>	<span class="keyword">break</span>	<span class="keyword">continue</span>	<span class="keyword">return</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>定义访问权限修饰符</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span>	<span class="keyword">protected</span>	<span class="keyword">public</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>定义类、函数、变量</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">abstract</span>	<span class="keyword">final</span>	<span class="keyword">static</span>	<span class="keyword">synchronized</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>定义类与类间关系</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">extends	implements</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>定义建立、引用、判断实例</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span>	<span class="keyword">this</span>	<span class="keyword">super</span>	<span class="keyword">instanceof</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>处理异常</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>	<span class="keyword">catch</span>	<span class="keyword">finally</span>	<span class="keyword">throw</span>	<span class="keyword">throws</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>用于包</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span>	<span class="keyword">import</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>其他</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">native</span>	<span class="keyword">strictfp</span>	<span class="keyword">transient</span>	<span class="keyword">volatile</span>	<span class="keyword">assert</span></span><br></pre></td></tr></table></figure>
+<li><p>方法</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">StringBuffer buffer = <span class="keyword">new</span> StringBuffer(<span class="string">"hello"</span>);</span><br><span class="line"></span><br><span class="line">buffer.append(<span class="string">"world"</span>);  <span class="comment">//追加字符串</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">delete</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end)</span></span>;<span class="comment">//移除此序列的子字符串中的字符。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> offset, <span class="keyword">int</span> i)</span></span>;<span class="comment">//将 int 参数的字符串表示形式插入此序列中。</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">toString</span><span class="params">()</span></span>; <span class="comment">//转换成字符串</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">replace</span><span class="params">(<span class="keyword">int</span> start, <span class="keyword">int</span> end, String str)</span></span>;<span class="comment">//使用给定 String 中的字符替换此序列的子字符串中的字符</span></span><br><span class="line"></span><br><span class="line">indexOf(<span class="string">"str"</span>); <span class="comment">//返回str下标，若不存在返回-1；</span></span><br><span class="line"></span><br><span class="line">其它同String方法一致……</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="2-标识符"><a href="#2-标识符" class="headerlink" title="2. 标识符"></a>2. 标识符</h3><p>由26个字符（大小写）、数字、<kbd>_</kbd>、<kbd>$</kbd>组成<br>规则：</p>
-<ul>
-<li>数字不开头</li>
-<li>不能用关键字</li>
-</ul>
+<h3 id="Stack"><a href="#Stack" class="headerlink" title="Stack"></a>Stack</h3><p>常用的方法包括：</p>
 <blockquote>
-<p>eg<br>class Demo1test<br>class Demo_1$test<br>name$subname</p>
+<p>push() 将项压入栈顶<br>pop() 移除栈顶对象，并将其作为函数返回值<br>peek()  查看栈顶的对象，但是不移除<br>isEmpty() 栈是否为空</p>
 </blockquote>
-<p>标识符要有意义<br>类名：首字母大写。若由多个单词组成，每个单词首字母大写。<br>以下划线开头：局部变量</p>
-<h3 id="3-注释"><a href="#3-注释" class="headerlink" title="3. 注释"></a>3. 注释</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">文档注释</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123; <span class="comment">//这是单行注释</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"hello java!"</span>);</span><br><span class="line">		<span class="comment">/* </span></span><br><span class="line"><span class="comment">		多行注释</span></span><br><span class="line"><span class="comment">		多行注释</span></span><br><span class="line"><span class="comment">		多行注释</span></span><br><span class="line"><span class="comment">		*/</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">需求：练习hello word</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">思路：</span></span><br><span class="line"><span class="comment">1. 定义一个类</span></span><br><span class="line"><span class="comment">2. 定义一个主函数,保证程序独立运行</span></span><br><span class="line"><span class="comment">3. 在控制台看到，使用输出语句</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">步骤：</span></span><br><span class="line"><span class="comment">1. class</span></span><br><span class="line"><span class="comment">2. mian</span></span><br><span class="line"><span class="comment">3. System.out.println("hello word")</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Demo</span></span>&#123; </span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"hello java!"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="4-常量与变量"><a href="#4-常量与变量" class="headerlink" title="4. 常量与变量"></a>4. 常量与变量</h3><h4 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h4><p>常量是不能改变的数值</p>
-<ul>
-<li>整数常量<blockquote>
-<p>二进制: 0 1<br>八进制: 0 1 2 3 4 5 6 7 以0开头<br>十进制: 0 1 2 3 4 5 6 7 8 9<br>十六进制: 0 1 2 3 4 5 6 7 8 9 a b c d e f  以0x开头</p>
-</blockquote>
-</li>
-<li>小数常量</li>
-<li>布尔常量：true、false</li>
-<li>字符常量：’’</li>
-<li>字符串常量：””</li>
-<li>null常量：null</li>
-</ul>
-<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><h3 id="5-运算符"><a href="#5-运算符" class="headerlink" title="5. 运算符"></a>5. 运算符</h3><h3 id="6-语句"><a href="#6-语句" class="headerlink" title="6. 语句"></a>6. 语句</h3><h3 id="7-函数"><a href="#7-函数" class="headerlink" title="7. 函数"></a>7. 函数</h3><h3 id="8-数组"><a href="#8-数组" class="headerlink" title="8. 数组"></a>8. 数组</h3>
+
       
     </div>
 
@@ -618,8 +574,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/test2/" rel="next" title="test2">
-                <i class="fa fa-chevron-left"></i> test2
+              <a href="/2019/01/java02/" rel="next" title="Java语言基础组成">
+                <i class="fa fa-chevron-left"></i> Java语言基础组成
               </a>
             
           </div>
@@ -628,8 +584,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/java02/" rel="prev" title="Java语言基础组成">
-                Java语言基础组成 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/hello-world/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -701,7 +657,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -720,7 +676,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -739,7 +697,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">1</span>
+                      
+                    
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -777,7 +737,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-StringBuffer和StringBuilder"><span class="nav-number">1.</span> <span class="nav-text">1. StringBuffer和StringBuilder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-标识符"><span class="nav-number">2.</span> <span class="nav-text">2. 标识符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-注释"><span class="nav-number">3.</span> <span class="nav-text">3. 注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-常量与变量"><span class="nav-number">4.</span> <span class="nav-text">4. 常量与变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#常量"><span class="nav-number">4.1.</span> <span class="nav-text">常量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">4.2.</span> <span class="nav-text">变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-运算符"><span class="nav-number">5.</span> <span class="nav-text">5. 运算符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-语句"><span class="nav-number">6.</span> <span class="nav-text">6. 语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-函数"><span class="nav-number">7.</span> <span class="nav-text">7. 函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-数组"><span class="nav-number">8.</span> <span class="nav-text">8. 数组</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#StringBuffer和StringBuilder"><span class="nav-number">1.</span> <span class="nav-text">StringBuffer和StringBuilder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Stack"><span class="nav-number">2.</span> <span class="nav-text">Stack</span></a></li></ol></div>
             
 
           </div>
